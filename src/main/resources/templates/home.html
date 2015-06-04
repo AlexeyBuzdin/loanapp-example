@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>LoanApp</title>
+</head>
+<body>
+<h1 th:inline="text" th:if="${#httpServletRequest.remoteUser != null}">Hello [[${#httpServletRequest.remoteUser}]]!</h1>
+
+<p>Click <a th:href="@{/login}">here</a> to login.</p>
+
+<form th:action="@{/logout}" method="post">
+    <input type="submit" value="Sign Out"/>
+</form>
+</body>
+</html>

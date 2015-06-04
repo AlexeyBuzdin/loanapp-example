@@ -17,7 +17,7 @@ apply plugin: 'spring-boot'
 apply plugin: 'io.spring.dependency-management'
 apply plugin: 'application'
 
-mainClassName = "com.github.larchaon.loanapp.LoanappApplication"
+mainClassName = "com.github.larchaon.loanapp.RunApplication"
 
 jar {
     baseName = 'loanapp'

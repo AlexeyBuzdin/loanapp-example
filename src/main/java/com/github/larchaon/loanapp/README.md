@@ -7,5 +7,7 @@
 -    Client should be able to extend a loan. Loan term gets extended for one week, interest gets increased by a factor of 1.5.
 -    The whole history of loans is visible for clients, including loan extensions.
 
-### Feature Improvements
+### TODO left
+- Should return unauthorized status code if user is not logged in
+-
 

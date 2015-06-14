@@ -5,13 +5,15 @@ import com.github.larchaon.loanapp.client.loan.issue.IssueLoanModel;
 import com.github.larchaon.loanapp.util.ToDoException;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletRequest;
+
 @RestController
 @RequestMapping(value = "clients/{clientId}/loans")
 public class ClientLoanRestController {
 
     // TODO: Add authentication
     @RequestMapping(value = "", method = RequestMethod.GET)
-    public LoanHistoryModel clientLoans(@PathVariable("clientId") String clientId) {
+    public LoanHistoryModel clientLoans(@PathVariable("clientId") String clientId, HttpServletRequest request) {
         throw new ToDoException("Fetch client loans");
     }
 

@@ -30,20 +30,19 @@ repositories {
     mavenCentral()
 }
 dependencies {
-    // tag::jetty[]
     compile("org.springframework.boot:spring-boot-starter-web") {
         exclude module: "spring-boot-starter-tomcat"
     }
     compile("org.springframework.boot:spring-boot-starter-jetty")
-    // end::jetty[]
-    // tag::actuator[]
     compile("org.springframework.boot:spring-boot-starter-actuator")
-    // end::actuator[]
     compile("org.springframework.boot:spring-boot-starter-data-jpa")
     compile("org.springframework.boot:spring-boot-starter-security")
-    compile("org.springframework.boot:spring-boot-starter-thymeleaf")
+    compile("ma.glasnost.orika:orika-core:1.4.2")
+
     runtime("com.h2database:h2")
+
     testCompile("org.springframework.boot:spring-boot-starter-test")
+    testCompile 'com.jayway.restassured:rest-assured:2.4.1'
 }
 
 task wrapper(type: Wrapper) {

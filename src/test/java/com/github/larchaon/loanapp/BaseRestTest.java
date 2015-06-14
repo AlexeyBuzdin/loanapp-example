@@ -16,7 +16,7 @@ import org.springframework.test.context.web.WebAppConfiguration;
 @IntegrationTest("server.port:8080")
 public class BaseRestTest {
     @BeforeClass
-    public static void setUp() {
+    public static void setUpClass() {
         RestAssured.authentication = RestAssured.basic("user", "password");
         RestAssured.enableLoggingOfRequestAndResponseIfValidationFails();
         RestAssured.requestContentType("application/json");

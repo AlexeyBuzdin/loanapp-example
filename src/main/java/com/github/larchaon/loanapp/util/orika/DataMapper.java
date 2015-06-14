@@ -9,6 +9,6 @@ public class DataMapper extends ConfigurableMapper {
 
     @Override
     protected void configure(MapperFactory factory) {
-
+        // TODO: Add Orika configuration for Loan
     }
 }

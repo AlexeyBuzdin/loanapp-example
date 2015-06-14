@@ -1,20 +1,29 @@
 package com.github.larchaon.loanapp.loan;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 import java.util.Date;
 
+@Entity
 public class Loan {
-    private long loanId;
+
+    @Id
+    @GeneratedValue
+    private long pk;
     private long clientId;
     private long amount;
+//    @NotNull
     private Date signedOn;
+//    @NotNull
     private Date expiresOn;
 
-    public long getLoanId() {
-        return loanId;
+    public long getPk() {
+        return pk;
     }
 
-    public void setLoanId(long loanId) {
-        this.loanId = loanId;
+    public void setPk(long pk) {
+        this.pk = pk;
     }
 
     public long getClientId() {

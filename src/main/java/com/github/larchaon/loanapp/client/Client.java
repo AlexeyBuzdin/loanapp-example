@@ -3,25 +3,30 @@ package com.github.larchaon.loanapp.client;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.validation.constraints.NotNull;
 
 @Entity
 public class Client {
 
     @Id
     @GeneratedValue
-    private long id;
+    private long pk;
     private long personalCode;
+    @NotNull
     private String phoneNumber;
+//    @NotNull
     private String fullName;
+    @NotNull
     private String email;
+    @NotNull
     private String password;
 
-    public long getId() {
-        return id;
+    public long getPk() {
+        return pk;
     }
 
-    public void setId(long id) {
-        this.id = id;
+    public void setPk(long pk) {
+        this.pk = pk;
     }
 
     public String getFullName() {

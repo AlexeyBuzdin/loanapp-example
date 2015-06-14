@@ -1,4 +1,4 @@
-package com.github.larchaon.loanapp.util;
+package com.github.larchaon.loanapp.util.exceptions;
 
 public class ToDoException extends RuntimeException {
     public ToDoException() {

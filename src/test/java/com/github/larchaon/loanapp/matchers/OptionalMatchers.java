@@ -1,4 +1,4 @@
-package com.github.larchaon.matchers;
+package com.github.larchaon.loanapp.matchers;
 
 import org.hamcrest.Description;
 import org.hamcrest.Matcher;

@@ -7,7 +7,7 @@ import com.jayway.restassured.response.ExtractableResponse;
 import com.jayway.restassured.response.Response;
 import org.junit.Test;
 
-import static com.github.larchaon.matchers.PatternMatcher.matchesPattern;
+import static com.github.larchaon.loanapp.matchers.PatternMatcher.matchesPattern;
 import static com.jayway.restassured.RestAssured.given;
 import static com.jayway.restassured.RestAssured.when;
 import static org.springframework.http.HttpHeaders.LOCATION;
@@ -64,6 +64,14 @@ public class ClientRestControllerTest extends BaseRestTest {
           get("/clients/999").
         then().
           statusCode(NOT_FOUND.value());
+    }
+
+    @Test
+    public void getById_should_return_BadRequest_status_code_for_invalid_clientId() throws Exception {
+        when().
+          get("/clients/non_valid").
+        then().
+          statusCode(BAD_REQUEST.value());
     }
 
     @Test

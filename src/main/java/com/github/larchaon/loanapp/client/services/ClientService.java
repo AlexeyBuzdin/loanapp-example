@@ -14,10 +14,10 @@ public class ClientService {
 
     public long saveClient(Client newClient) {
         Client savedClient = clientRepository.save(newClient);
-        return savedClient.getId();
+        return savedClient.getPk();
     }
 
     public Optional<Client> findClientById(long clientId) {
-        return clientRepository.findById(clientId);
+        return clientRepository.findByPk(clientId);
     }
 }

@@ -1,4 +1,4 @@
-package com.github.larchaon.matchers;
+package com.github.larchaon.loanapp.matchers;
 
 import com.github.larchaon.builder4j.GetProperty;
 import org.hamcrest.Description;

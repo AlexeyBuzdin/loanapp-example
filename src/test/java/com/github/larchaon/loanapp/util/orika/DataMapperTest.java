@@ -7,7 +7,7 @@ import com.github.larchaon.loanapp.client.register.RegisterClientModel;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import static com.github.larchaon.matchers.BeanMatchers.hasProperty;
+import static com.github.larchaon.loanapp.matchers.BeanMatchers.hasProperty;
 import static org.hamcrest.Matchers.allOf;
 import static org.hamcrest.Matchers.equalTo;
 import static org.junit.Assert.assertThat;

@@ -7,7 +7,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class RunApplication {
 
     public static void main(String[] args) {
-        int port = 8080;
-        SpringApplication.run(RunApplication.class, "server.port=" + port);
+        SpringApplication.run(RunApplication.class);
     }
 }

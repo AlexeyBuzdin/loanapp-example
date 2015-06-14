@@ -8,6 +8,6 @@
 -    The whole history of loans is visible for clients, including loan extensions.
 
 ### TODO left
-- Should return unauthorized status code if user is not logged in
+- Add different user roles
 -
 

@@ -1,9 +1,15 @@
 package com.github.larchaon.loanapp.client.register;
 
+import javax.validation.constraints.NotNull;
+
 public class RegisterClientModel {
+
     private long personalCode;
+    @NotNull
     private String phoneNumber;
+    @NotNull
     private String email;
+    @NotNull
     private String password;
 
     public long getPersonalCode() {

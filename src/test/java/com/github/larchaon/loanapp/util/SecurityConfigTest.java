@@ -7,7 +7,7 @@ import static com.jayway.restassured.RestAssured.given;
 import static org.springframework.http.HttpStatus.OK;
 import static org.springframework.http.HttpStatus.UNAUTHORIZED;
 
-public class SecurityConfigRestTest extends BaseRestTest {
+public class SecurityConfigTest extends BaseRestTest {
 
     @Test
     public void should_return_Unauthorized_status_code_if_user_is_not_logged_in() {

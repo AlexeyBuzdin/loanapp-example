@@ -21,8 +21,7 @@ public class BeanMatchers {
 
             @Override
             protected void describeMismatchSafely(BEAN item, Description mismatchDescription) {
-                super.describeMismatchSafely(item, mismatchDescription);
-                // TODO: Add Getter name to description
+                getterMatcher.describeMismatch(getter.accept(item), mismatchDescription);
             }
         };
     }

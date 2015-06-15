@@ -7,7 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
-public abstract class CustomMapper<A, B> {
+public abstract class ApplicationMapper<A, B> {
 
     private final Class<A> classA;
     private final Class<B> classB;
@@ -18,18 +18,18 @@ public abstract class CustomMapper<A, B> {
     @Autowired
     MapperFactory mapperFactory;
 
-    public CustomMapper(Class<A> classA, Class<B> classB) {
+    public ApplicationMapper(Class<A> classA, Class<B> classB) {
         this.classA = classA;
         this.classB = classB;
         A = Attributes.rootAttribute(classA);
         B = Attributes.rootAttribute(classB);
-
-        classMapBuilder = mapperFactory.classMap(classA, classB);
     }
 
     protected abstract void init(ClassMapBuilder<A, B> classMapBuilder);
 
     public ClassMap<A, B> constructClassMap() {
+        classMapBuilder = mapperFactory.classMap(classA, classB);
+        init(classMapBuilder);
         return classMapBuilder.toClassMap();
     }
 }

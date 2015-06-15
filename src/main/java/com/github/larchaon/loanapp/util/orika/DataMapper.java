@@ -13,7 +13,7 @@ import javax.annotation.PostConstruct;
 public class DataMapper {
 
     @Autowired(required = false)
-    CustomMapper[] customMappers;
+    ApplicationMapper[] customMappers;
 
     @Autowired(required = false)
     CustomConverter[] customConverters;
@@ -26,7 +26,7 @@ public class DataMapper {
     @PostConstruct
     public void init() {
         if (customMappers != null) {
-            for (CustomMapper customMapper : customMappers) {
+            for (ApplicationMapper customMapper : customMappers) {
                 factory.registerClassMap(customMapper.constructClassMap());
             }
         }

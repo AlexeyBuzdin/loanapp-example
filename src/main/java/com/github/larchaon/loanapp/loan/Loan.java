@@ -3,6 +3,7 @@ package com.github.larchaon.loanapp.loan;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.validation.constraints.NotNull;
 import java.util.Date;
 
 @Entity
@@ -13,9 +14,9 @@ public class Loan {
     private long pk;
     private long clientId;
     private long amount;
-//    @NotNull
-    private Date signedOn;
-//    @NotNull
+    @NotNull
+    private Date createdOn;
+    @NotNull
     private Date expiresOn;
 
     public long getPk() {
@@ -42,12 +43,12 @@ public class Loan {
         this.amount = amount;
     }
 
-    public Date getSignedOn() {
-        return signedOn;
+    public Date getCreatedOn() {
+        return createdOn;
     }
 
-    public void setSignedOn(Date signedOn) {
-        this.signedOn = signedOn;
+    public void setCreatedOn(Date createdOn) {
+        this.createdOn = createdOn;
     }
 
     public Date getExpiresOn() {

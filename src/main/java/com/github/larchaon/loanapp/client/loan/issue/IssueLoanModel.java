@@ -9,7 +9,7 @@ public class IssueLoanModel {
     private long amount;
     @Min(1)
     @Max(30)
-    private long term;
+    private int term;
 
     public long getAmount() {
         return amount;
@@ -19,11 +19,11 @@ public class IssueLoanModel {
         this.amount = amount;
     }
 
-    public long getTerm() {
+    public int getTerm() {
         return term;
     }
 
-    public void setTerm(long term) {
+    public void setTerm(int term) {
         this.term = term;
     }
 }

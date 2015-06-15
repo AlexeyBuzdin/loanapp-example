@@ -40,6 +40,7 @@ dependencies {
     compile("org.springframework.boot:spring-boot-starter-security")
     compile("com.allanditzel:spring-security-csrf-token-filter:1.1")
     compile("ma.glasnost.orika:orika-core:1.4.2")
+    compile("org.apache.commons:commons-lang3:3.4")
 
     runtime("com.h2database:h2")
 

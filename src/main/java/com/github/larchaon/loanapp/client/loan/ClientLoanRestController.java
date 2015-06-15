@@ -5,7 +5,7 @@ import com.github.larchaon.loanapp.client.loan.issue.IssueLoanModel;
 import com.github.larchaon.loanapp.client.services.ClientService;
 import com.github.larchaon.loanapp.loan.Loan;
 import com.github.larchaon.loanapp.loan.service.LoanService;
-import com.github.larchaon.loanapp.util.exceptions.ToDoException;
+import com.github.larchaon.loanapp.util.exceptions.NotImplementedException;
 import com.github.larchaon.loanapp.util.orika.DataMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
@@ -42,7 +42,7 @@ public class ClientLoanRestController {
         Optional<Client> client$ = clientService.findClientById(clientId);
         if (!client$.isPresent()) return new ResponseEntity<>(NOT_FOUND);
 
-        throw new ToDoException("Fetch client loans");
+        throw new NotImplementedException("Fetch client loans");
     }
 
     @RequestMapping(value = "", method = POST)

@@ -11,7 +11,7 @@ import org.springframework.test.context.web.WebAppConfiguration;
 
 @Ignore
 @RunWith(SpringJUnit4ClassRunner.class)
-@SpringApplicationConfiguration(classes = RunApplication.class)
+@SpringApplicationConfiguration(classes = RunApp.class)
 @WebAppConfiguration
 @IntegrationTest("server.port:8080")
 public class BaseRestTest {

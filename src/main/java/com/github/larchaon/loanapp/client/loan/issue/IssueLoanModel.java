@@ -1,14 +1,16 @@
 package com.github.larchaon.loanapp.client.loan.issue;
 
+import com.github.larchaon.loanapp.loan.service.LoanConstants;
+
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 
-public class IssueLoanModel {
-    @Min(5)
-    @Max(300)
+public class IssueLoanModel implements LoanConstants {
+    @Min(MIN_LOAN_AMOUNT)
+    @Max(MAX_LOAN_AMOUNT)
     private long amount;
-    @Min(1)
-    @Max(30)
+    @Min(MIN_LOAN_TERM)
+    @Max(MAX_LOAN_TERM)
     private int term;
 
     public long getAmount() {

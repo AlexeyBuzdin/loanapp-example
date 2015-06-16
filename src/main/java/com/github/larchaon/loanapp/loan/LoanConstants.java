@@ -1,4 +1,4 @@
-package com.github.larchaon.loanapp.loan.service;
+package com.github.larchaon.loanapp.loan;
 
 public interface LoanConstants {
 

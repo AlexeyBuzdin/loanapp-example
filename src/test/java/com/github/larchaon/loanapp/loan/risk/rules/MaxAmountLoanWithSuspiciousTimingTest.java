@@ -1,4 +1,4 @@
-package com.github.larchaon.loanapp.loan.service.risk.rules;
+package com.github.larchaon.loanapp.loan.risk.rules;
 
 import com.github.larchaon.builder4j.TestBuilder;
 import com.github.larchaon.loanapp.loan.Loan;

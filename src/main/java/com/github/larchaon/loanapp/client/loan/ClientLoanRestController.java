@@ -1,10 +1,10 @@
 package com.github.larchaon.loanapp.client.loan;
 
 import com.github.larchaon.loanapp.client.Client;
+import com.github.larchaon.loanapp.client.ClientService;
 import com.github.larchaon.loanapp.client.loan.issue.IssueLoanModel;
-import com.github.larchaon.loanapp.client.services.ClientService;
 import com.github.larchaon.loanapp.loan.Loan;
-import com.github.larchaon.loanapp.loan.service.LoanService;
+import com.github.larchaon.loanapp.loan.LoanService;
 import com.github.larchaon.loanapp.util.exceptions.NotImplementedException;
 import com.github.larchaon.loanapp.util.orika.DataMapper;
 import org.springframework.beans.factory.annotation.Autowired;

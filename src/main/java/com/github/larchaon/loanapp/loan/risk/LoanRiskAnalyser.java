@@ -1,7 +1,7 @@
-package com.github.larchaon.loanapp.loan.service.risk;
+package com.github.larchaon.loanapp.loan.risk;
 
 import com.github.larchaon.loanapp.loan.Loan;
-import com.github.larchaon.loanapp.loan.service.risk.rules.LoanRiskRule;
+import com.github.larchaon.loanapp.loan.risk.rules.LoanRiskRule;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

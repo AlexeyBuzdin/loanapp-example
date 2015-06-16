@@ -2,6 +2,8 @@ package com.github.larchaon.loanapp.client.services;
 
 import com.github.larchaon.loanapp.BaseIntegrationTest;
 import com.github.larchaon.loanapp.client.Client;
+import com.github.larchaon.loanapp.client.ClientRepository;
+import com.github.larchaon.loanapp.client.ClientService;
 import com.github.larchaon.loanapp.helpers.ClientTestData;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;

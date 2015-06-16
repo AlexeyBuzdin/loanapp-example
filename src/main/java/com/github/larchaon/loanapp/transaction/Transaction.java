@@ -1,4 +1,4 @@
-package com.github.larchaon.loanapp.loan.application;
+package com.github.larchaon.loanapp.transaction;
 
 import javax.persistence.*;
 import java.util.Date;
@@ -10,13 +10,13 @@ import java.util.Date;
                 @Index(columnList = "remoteAddress", name = "remoteAddress_x")
         }
 )
-public class LoanApplication {
+public class Transaction {
     @Id
     private long pk;
-    private long loanId;
     private String remoteAddress;
     @Temporal(TemporalType.DATE)
     private Date createdOn;
+    private int transactionCount;
 
     public long getPk() {
         return pk;
@@ -26,12 +26,12 @@ public class LoanApplication {
         this.pk = pk;
     }
 
-    public long getLoanId() {
-        return loanId;
+    public int getTransactionCount() {
+        return transactionCount;
     }
 
-    public void setLoanId(long loanId) {
-        this.loanId = loanId;
+    public void setTransactionCount(int transactionCount) {
+        this.transactionCount = transactionCount;
     }
 
     public String getRemoteAddress() {

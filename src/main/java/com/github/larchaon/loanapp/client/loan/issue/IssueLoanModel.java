@@ -1,6 +1,6 @@
 package com.github.larchaon.loanapp.client.loan.issue;
 
-import com.github.larchaon.loanapp.loan.service.LoanConstants;
+import com.github.larchaon.loanapp.loan.LoanConstants;
 
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;

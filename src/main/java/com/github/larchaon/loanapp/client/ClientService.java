@@ -1,6 +1,5 @@
-package com.github.larchaon.loanapp.client.services;
+package com.github.larchaon.loanapp.client;
 
-import com.github.larchaon.loanapp.client.Client;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

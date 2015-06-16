@@ -1,6 +1,5 @@
-package com.github.larchaon.loanapp.client.services;
+package com.github.larchaon.loanapp.client;
 
-import com.github.larchaon.loanapp.client.Client;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

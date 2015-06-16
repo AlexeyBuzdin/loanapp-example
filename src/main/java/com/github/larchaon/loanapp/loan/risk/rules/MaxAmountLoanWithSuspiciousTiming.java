@@ -1,8 +1,8 @@
-package com.github.larchaon.loanapp.loan.service.risk.rules;
+package com.github.larchaon.loanapp.loan.risk.rules;
 
 import com.github.larchaon.loanapp.loan.Loan;
-import com.github.larchaon.loanapp.loan.service.LoanConstants;
-import com.github.larchaon.loanapp.loan.service.risk.Risk;
+import com.github.larchaon.loanapp.loan.LoanConstants;
+import com.github.larchaon.loanapp.loan.risk.Risk;
 import org.springframework.stereotype.Component;
 
 import java.util.Calendar;

@@ -1,7 +1,6 @@
 package com.github.larchaon.loanapp.client;
 
 import com.github.larchaon.loanapp.client.register.RegisterClientModel;
-import com.github.larchaon.loanapp.client.services.ClientService;
 import com.github.larchaon.loanapp.util.orika.DataMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;

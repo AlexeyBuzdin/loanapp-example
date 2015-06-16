@@ -1,4 +1,4 @@
-package com.github.larchaon.loanapp.loan.service.risk;
+package com.github.larchaon.loanapp.loan.risk;
 
 import com.github.larchaon.loanapp.util.exceptions.ValidationError;
 
